@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Comandos de Linux - chmod</title>
+
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" style="text-decoration: none; color: white;">
+                <div style="display: flex; flex-direction: row; gap: 20px">
+                    <img src="../Imagenes/pinguino.png" style="height: 50px; margin-top: 5px;" alt="Pingüino de Linux">
+                    <p class="headerTitle">
+                        Comandos de Linux<span>_</span>
+                    </p>
+                </div>
+            </a>
+             
+
+            <div>
+                <a href="#">
+                    <p>Cut</p>
+                </a>
+                
+                <a href="#">
+                    <p>Sort</p>
+                </a>
+
+                <a href="#">
+                    <p>Grep</p>
+                </a>
+
+                <a href="./chmod.html">
+                    <p>Chmod</p>
+                </a>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="commandBox">
+                <p style="font-size: 30px;"><strong>Manual chmod</strong></p>
+            
+                <!-- Definicion -->
+                <p style="font-size: 15px;">El comando <span>chmod</span> 
+                    sirve para gestionar los permisos de los archivos o directorios del sistema. 
+                    Cuando usamos este comando debemos tener presentes los tres niveles de gestión de permisos que existen:</p>
+                    <ul>
+                        <li>Lectura (r)</li>
+                        <li>Escritura (w)</li>
+                        <li>Ejecución (x)</li>
+                    </ul>
+
+                <br>
+
+                <!-- Sintaxis -->
+                <p class="boxTitle"> <strong>Sintaxis</strong></p>
+                <p><span>chmod [opciones] permisos fichero/directorio</span></p>
+                <p>Los permisos pueden ser mediante caracteres o un número octal.</p>
+                <p>En el caso de los caracteres, se usa <span>-</span>, <span>+</span> o <span>=</span> para especificar si queremos quitar, asignar o renovar permisos, respectivamente</p>
+                <br>
+
+               <!-- Opciones -->
+                <p class="boxTitle"> <strong>Opciones</strong></p>
+                <ul>
+                    <li> <span>-i</span>: Opción</li> <br>
+                    <li> <span>-i</span>: Opción</li> <br>
+                    <li> <span>-i</span>: Opción</li> <br>
+                </ul>
+                
+                <br> 
+
+                <!-- Ejemplos -->
+                <p class="boxTitle"> <strong>Ejemplos</strong></p>
+
+                <ol style="list-style: circle;">
+                    <li>
+                        <p>Comando que quita el permiso de escritura del archivo alumnos.txt para todos los usuarios que no sean el propietario ni pertenezcan al grupo del propietario.</p>
+                        <p><span>chmod o-w alumnos.txt</span></p>
+                    </li>
+                </ol>
+
+                
+                <br>
+                
+            </div>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        </main>
+
+        <footer>
+            <p>Alejandro Cadalso, Alejandro Bonilla, Asier Sánchez e Iván Ruiz</p>
+        </footer>
+    </body>
+
+</html>
+
+<!--
+    TODO: COMANDOS:
+
+    - Sirve para X
+    - Ejemplos de uso explicados
+    - Opciones
+    - Patrones
+
+-->
