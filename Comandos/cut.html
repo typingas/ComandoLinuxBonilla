@@ -58,22 +58,43 @@
                <!-- Opciones -->
                 <p class="boxTitle"> <strong>Opciones</strong></p>
                 <ul>
-                    <li> <span>-i</span>: Opción</li> <br>
-                    <li> <span>-i</span>: Opción</li> <br>
-                    <li> <span>-i</span>: Opción</li> <br>
+
+                    <li> <span>-d</span>: Especifica el delimitador que se utilizará para dividir el texto en campos.</li> <br>
+
+                    <li> <span>-f</span>: Se utiliza para seleccionar campos específicos de una línea de texto o archivo, debes especificar uno o más números de campo separados por comas.</li> <br>
+
+                    <li> <span>-i</span>: Opción</li> <br> <!-- Cadalso -->
                 </ul>
                 
                 <br> 
 
                 <!-- Ejemplos -->
                 <p class="boxTitle"> <strong>Ejemplos</strong></p>
-                <ol style="list-style: circle;"">
+                <ul style="list-style: circle;"">
+
+                <ul style="list-style: circle;">
                     <li>
                         <p>Este comando serviria para extraer los primeros 10 caracteres de cada línea</p>
                         <p><span>cut -c1-10 viaje.txt</span></p>
                     </li>
-                </ol>
-                
+
+                    <li>
+                        <p>Suponiendo que tenemos el texto "Juan|25|Madrid" en datos.txt, este comando separa el texto a partir del delimitador ":"</p>
+                        <p><span>cut -d '|' datos.txt</span></p>
+                    </li>
+
+                    <li>
+                        <p>Este comando serviria para extraer solo los nombres y apellidos de los trabajadores</p>
+                        <p>Juan Pérez:Desarrollador:30:Informática</p>
+                        <p>María Rodríguez:Diseñadora:28:Diseño gráfico</p>
+                        <p>Carlos López:Contador:35:Finanzas</p>
+                        <p><span>cut -d ":" -f 1 empleados.txt</span></p>
+                    </li>
+
+                    <li>
+                        <!-- Cadalso -->
+                    </li>
+                </ul>
                 
             </div>
             <br> <br> <br> <br> <br> <br> <br> <br> <br>
