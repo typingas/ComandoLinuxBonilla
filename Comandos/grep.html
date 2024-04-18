@@ -58,7 +58,7 @@
                <!-- Opciones -->
                 <p class="boxTitle"> <strong>Opciones</strong></p>
                 <ul>
-                    <li> <span>-i</span>: Opción</li> <br>
+                    <li> <span>-v</span>: Invertir coincidencia</li>, lo que hace esta opcion es mostrar las lineas que no contienen el texto dado al comando<br>
                     <li> <span>-i</span>: Opción</li> <br>
                     <li> <span>-i</span>: Opción</li> <br>
                 </ul>
@@ -71,6 +71,10 @@
                     <li>
                         <p>Este comando busca las lineas donde salga la palabra Estudiante en el archivo NotasInstituto.txt</p>
                         <p><span>grep "Estudiante" NotasInstituto.txt</span></p>
+                    </li>
+                    <li>
+                        <p>Esta opcion busca las lineas donde no aparezca la palabra Alumno en el archivo Alumnado.txt</p>
+                        <p><span>grep -v "Alumno" Alumnado.txt</span></p>
                     </li>
                 </ol>
             </div>
