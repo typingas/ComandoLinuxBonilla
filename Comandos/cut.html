@@ -63,7 +63,7 @@
 
                     <li> <span>-f</span>: Se utiliza para seleccionar campos específicos de una línea de texto o archivo, debes especificar uno o más números de campo separados por comas.</li> <br>
 
-                    <li> <span>-i</span>: Opción</li> <br> <!-- Cadalso -->
+                    <li> <span>-c</span>: Sirve para selecionar unos caracteres determinados de cada linea</li> <br>
                 </ul>
                 
                 <br> 
@@ -92,7 +92,19 @@
                     </li>
 
                     <li>
-                        <!-- Cadalso -->
+                        <p>
+                            Yo tengo el archivo "lista.txt" y su contenido es:<br>
+                            12345:Paco<br>
+                            23456:Paula<br>
+                            34567:Mario<br>
+                            <br>
+                            Si yo quiero separa los siete primeros caracteres, debo ejecutar el siguiente comando:<br>
+                            <span>cut -c 1-7 lista.txt</span><br><br>
+                            La salida del comando será:<br>
+                            12345:P<br>
+                            23456:P<br>
+                            34567:M<br>
+                        </p>
                     </li>
                 </ul>
                 
