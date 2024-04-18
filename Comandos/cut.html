@@ -58,7 +58,7 @@
                <!-- Opciones -->
                 <p class="boxTitle"> <strong>Opciones</strong></p>
                 <ul>
-                    <li> <span>-i</span>: Opción</li> <br>
+                    <li> <span>-d</span>: Especifica el delimitador que se utilizará para dividir el texto en campos.</li> <br>
                     <li> <span>-i</span>: Opción</li> <br>
                     <li> <span>-i</span>: Opción</li> <br>
                 </ul>
@@ -71,6 +71,11 @@
                     <li>
                         <p>Este comando serviria para extraer los primeros 10 caracteres de cada línea</p>
                         <p><span>cut -c1-10 viaje.txt</span></p>
+                    </li>
+
+                    <li>
+                        <p>Suponiendo que tenemos el texto "Juan|25|Madrid" en datos.txt, este comando separa el texto a partir del delimitador ":"</p>
+                        <p><span>cut -d '|' datos.txt</span></p>
                     </li>
                 </ul>
                 
