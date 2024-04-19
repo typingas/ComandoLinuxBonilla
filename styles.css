@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     background-color: rgb(45, 42, 94);
-    font-family: 'Cascadia Code' ,sans-serif;
+    font-family: 'Cascadia Code', sans-serif;
 
     line-height: 30px;
 }
@@ -132,7 +132,5 @@ footer {
     min-width: 250px; 
     background-color: rgb(100, 100, 100);
 }
-
-
 
 

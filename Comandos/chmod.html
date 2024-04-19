@@ -20,15 +20,15 @@
              
 
             <div>
-                <a href="#">
+                <a href="./cut.html">
                     <p>Cut</p>
                 </a>
                 
-                <a href="#">
+                <a href="./sort.html">
                     <p>Sort</p>
                 </a>
 
-                <a href="#">
+                <a href="./grep.html">
                     <p>Grep</p>
                 </a>
 
@@ -65,9 +65,9 @@
                <!-- Opciones -->
                 <p class="boxTitle"> <strong>Opciones</strong></p>
                 <ul>
-                    <li> <span>-i</span>: Opción</li> <br>
-                    <li> <span>-i</span>: Opción</li> <br>
-                    <li> <span>-i</span>: Opción</li> <br>
+                    <li> <span>-c</span>: Se utiliza para mostrar los cambios de permisos que se realizarían sin aplicarlos realmente.</li> <br>
+                    <li> <span>-v</span>: Muestra un mensaje detallado para cada archivo o directorio al que se le cambian los permisos. Es útil para ver exactamente qué cambios se aplican.</li> <br>
+                    <li> <span>-R</span>: Cambia los permisos de carpetas y archivos de manera recursiva.</li> <br>
                 </ul>
                 
                 <br> 
@@ -79,6 +79,18 @@
                     <li>
                         <p>Comando que quita el permiso de escritura del archivo alumnos.txt para todos los usuarios que no sean el propietario ni pertenezcan al grupo del propietario.</p>
                         <p><span>chmod o-w alumnos.txt</span></p>
+                    </li>
+                    <li>
+                        <p>Sirve para simular los cambios de permisos que se realizarían en un archivo o directorio, sin aplicarlos de forma definitiva.</p>
+                        <p><span>chmod -c u=rw,g=r,o= viaje.txt</span></p>
+                    </li>
+                    <li>
+                        <p>Este comando indica que los permisos del archivo se han actualizado para permitir la escritura al grupo.</p>
+                        <p><span>chmod -v g+w miarchivo.txt</span></p>
+                    </li>
+                    <li>
+                        <p>Imaginemos que yo tengo una carpeta con unos archivos y otras carpetas y yo quiero que todas las carpetas y archivos tengan los mismos permisos, lo que tendria que hacer es ejecutar el comando:</p>
+                        <p><span>chmod -R a+rx ./Carpeta</span></p>
                     </li>
                 </ul>
 
