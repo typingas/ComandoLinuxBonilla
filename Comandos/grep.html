@@ -20,19 +20,19 @@
              
 
             <div>
-                <a href="#">
+                <a href="./cut.html">
                     <p>Cut</p>
                 </a>
                 
-                <a href="#">
+                <a href="./sort.html">
                     <p>Sort</p>
                 </a>
 
-                <a href="#">
+                <a href="./grep.html">
                     <p>Grep</p>
                 </a>
 
-                <a href="#">
+                <a href="./chmod.html">
                     <p>Chmod</p>
                 </a>
             </div>
@@ -60,7 +60,7 @@
                 <ul>
                     <li> <span>-v</span>: Invertir coincidencia. Lo que hace esta opcion es mostrar las lineas que no contienen el texto dado al comando</li><br>
                     <li> <span>-i</span>: Para no distinguir entre mayúsculas y minúsculas.</li> <br>
-                    <li> <span>-i</span>: Opción</li> <br>
+                    <li> <span>-g</span>: Se utiliza para separar las coincidencias encontradas por grupo de líneas y funciona de forma conjunta con la variable -o.</li> <br>
                 </ul>
                 
                 <br> 
@@ -80,8 +80,19 @@
                         <p>Busca la palabra "hola" sin importar las mayusculas en el archivo test.txt</p>
                         <p><span>grep -i "hOlA" test.txt</span></p>
                     </li>
-                </ol>
-
+                    <li>
+                        <p>Imagina que tienes un archivo llamado viaje.txt con el siguiente contenido: </p>
+                        <span class="textBox">
+                            Grupo 1: Línea 1 <br>
+                            Grupo 1: Línea 2 <br>
+                            Grupo 2: Línea 3 <br>
+                            Grupo 2: Línea 4 <br>
+                            Grupo 1: Línea 5 <br>
+                        </span>
+                            
+                        <p>Si deseas buscar la cadena "Línea 2" separando las coincidencias por grupo, puedes usar el siguiente comando:</p>
+                        <p><span>grep -g -o "Línea 2" viaje.txt</span></p>
+                    </li>
                 </ul>
             </div>
             <br> <br> <br> <br> <br> <br> <br> <br> <br>
